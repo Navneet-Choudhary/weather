@@ -1,0 +1,28 @@
+<%- include("partials/header"); -%>
+
+<div class="container">
+      <div class="result">
+
+        <h2 style="font-weight:bold; font-size:30px; padding-top:20px;" class="text-center"> <% if(city !== null)  {%><p class="city">Current Weather for <%= city %> , <% if(country !== null)  {%><%= country %><% } %> </p><% } %></h2>
+        <h3 style='padding-left:40px;'><strong>Weather</strong> : <% if(des !== null)  {%><%= des %><% } %></h3>
+        <h3 style='padding-left:40px;'><strong>Description</strong> : <% if(des !== null)  {%><%= des %><% } %> <% if(icon !== null)  {%><img class="icon" src="http://openweathermap.org/img/w/<%= icon %>.png" alt=""> <% } %></h3>
+        <h3 style='padding-left:40px;'><strong>Temperature</strong> : <% if(temp !== null)  {%><%= temp %><% } %> &deg;C </h3>
+        <h3 style='padding-left:40px;'><strong>Pressure</strong> : <% if(pressure !== null)  {%><%= pressure %><% } %> hpa</h3>
+        <h3 style='padding-left:40px;'><strong>Humidity</strong> : <% if(humidity !== null)  {%><%= humidity %><% } %></h3>
+        <h3 style='padding-left:40px;'><strong>Min Temperature</strong> : <% if(mintemp !== null)  {%><%= mintemp %><% } %> &deg;C</h3>
+        <h3 style='padding-left:40px;'><strong>Max Temperature</strong> : <% if(maxtemp !== null)  {%><%= maxtemp %><% } %> &deg;C</h3>
+        <h3 style='padding-left:40px;'><strong>Wind Speed</strong> : <% if(windspeed !== null)  {%><%= windspeed %><% } %> m/s</h3>
+        <h3 style='padding-left:40px; padding-bottom:30px;'><strong>Wind Direction</strong> : <% if(winddirection !== null)  {%><%= winddirection %><% } %>&deg;</h3>";
+
+
+
+
+        
+        </div>
+  
+        
+        
+      </div>
+</div>
+
+<%- include("partials/footer"); -%>
